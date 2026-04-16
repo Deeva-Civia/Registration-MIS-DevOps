@@ -1,3 +1,23 @@
+<IfModule mod_headers.c>
+    # 1. CSP
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net data:; img-src 'self' data:;"
+
+    # 2. HSTS (Memaksa koneksi HTTPS selama 1 tahun)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    # 3. X-Frame-Options (Mencegah web Anda dimasukkan ke dalam iframe / Clickjacking)
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # 4. X-Content-Type-Options (Mencegah browser menebak tipe file / MIME Sniffing)
+    Header always set X-Content-Type-Options "nosniff"
+
+    # 5. Referrer-Policy (Melindungi privasi URL asal saat user mengklik link keluar)
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # 6. Permissions-Policy (Membatasi akses fitur perangkat keras browser)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes

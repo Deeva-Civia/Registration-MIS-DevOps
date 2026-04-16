@@ -9,7 +9,7 @@
     
     <style>
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/MIS.jpg') center/cover no-repeat;
+	    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ asset('registration-mis/public/images/MIS.jpg') }}') center/cover no-repeat;
             padding: 100px 0;
             min-height: 80vh;
             display: flex;
@@ -64,10 +64,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item align-self-center">
-                        <a class="nav-link active" href="/">Beranda</a>
+                        <a class="nav-link active" href="{{ url('/') }}">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light ms-2 px-3 btn-login-custom" href="/login">Login Portal</a>
+                        <a class="nav-link btn btn-outline-light ms-2 px-3 btn-login-custom" href="{{ route('login') }}">Login Portal</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
             <p class="lead mb-5">Portal Pendaftaran Manado Independent School. <br> Bergabunglah dengan komunitas pendidikan bertaraf internasional terbaik di Sulawesi Utara.</p>
             
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                <a href="/register" class="btn btn-mis-red btn-lg px-4 gap-3 fw-bold">Daftar Sekarang</a>
+                <a href="{{ route('register') }}" class="btn btn-mis-red btn-lg px-4 gap-3 fw-bold">Daftar Sekarang</a>
                 <a href="#info" class="btn btn-outline-light btn-lg px-4">Pelajari Lebih Lanjut</a>
             </div>
         </div>

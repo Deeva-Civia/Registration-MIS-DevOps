@@ -95,7 +95,7 @@
         <div class="offcanvas-body py-4">
             <ul class="navbar-nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/parent/dashboard"><i class="bi bi-house-door me-3"></i> Dashboard Utama</a>
+                    <a class="nav-link nav-link-custom" href="{{ url('parent/dashboard') }}"><i class="bi bi-house-door me-3"></i> Dashboard Utama</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-custom active" href="#"><i class="bi bi-person-plus me-3"></i> Daftarkan Siswa Baru</a>
@@ -125,7 +125,7 @@
             <div class="col-lg-8">
                 
                 <div class="d-flex align-items-center mb-4">
-                    <a href="/parent/dashboard" class="btn btn-light border me-3 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                    <a href="{{ url('parent/dashboard') }}" class="btn btn-light border me-3 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
                         <i class="bi bi-arrow-left"></i>
                     </a>
                     <div>
@@ -203,7 +203,7 @@
                             </div>
 
                             <div class="d-flex justify-content-end gap-2 mt-4">
-                                <a href="/parent/dashboard" class="btn btn-light border px-4 fw-medium">Batal</a>
+                                <a href="{{ url('parent/dashboard') }}" class="btn btn-light border px-4 fw-medium">Batal</a>
                                 <button type="submit" class="btn btn-submit"><i class="bi bi-save me-2"></i>Simpan & Daftarkan Siswa</button>
                             </div>
 

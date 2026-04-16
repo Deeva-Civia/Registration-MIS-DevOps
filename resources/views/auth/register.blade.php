@@ -139,7 +139,7 @@
                                 <p class="text-muted small mb-0">Sudah punya akun? 
                                     <a href="{{ route('login') }}" class="text-primary fw-bold text-decoration-none">Login di sini</a>
                                 </p>
-                                <a href="/" class="text-decoration-none text-muted small mt-2 d-inline-block"><i class="bi bi-arrow-left me-1"></i> Kembali ke Beranda</a>
+                                <a href="{{ url('/') }}" class="text-decoration-none text-muted small mt-2 d-inline-block"><i class="bi bi-arrow-left me-1"></i> Kembali ke Beranda</a>
                             </div>
 
                         </form>

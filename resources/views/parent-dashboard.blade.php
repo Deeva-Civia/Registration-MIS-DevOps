@@ -45,10 +45,10 @@
         <div class="offcanvas-body py-4">
             <ul class="navbar-nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom active" href="{{ route('parent.dashboard') }}"><i class="bi bi-house-door me-3"></i> Dashboard Utama</a>
+                    <a class="nav-link nav-link-custom active" href="{{ url('parent/dashboard') }}"><i class="bi bi-house-door me-3"></i> Dashboard Utama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="{{ route('parent.register.student') }}"><i class="bi bi-person-plus me-3"></i> Daftarkan Siswa Baru</a>
+                    <a class="nav-link nav-link-custom" href="{{ url('parent/register-student') }}"><i class="bi bi-person-plus me-3"></i> Daftarkan Siswa Baru</a>
                 </li>
             </ul>
         </div>
@@ -94,7 +94,7 @@
                 <p class="text-muted">Pantau status pendaftaran anak Anda atau daftarkan siswa baru untuk tahun ajaran 2026/2027.</p>
             </div>
             <div class="col-md-4 text-md-end mt-4 mt-md-0">
-                <a href="{{ route('parent.register.student') }}" class="btn btn-register-new fw-bold text-decoration-none">
+                <a href="{{ url('parent/register-student') }}" class="btn btn-register-new fw-bold text-decoration-none">
                     <i class="bi bi-plus-circle-fill me-2 text-warning"></i>Daftarkan Siswa Baru
                 </a>
             </div>
@@ -164,7 +164,7 @@
                     <i class="bi bi-folder-x display-1 text-muted opacity-50 mb-3 d-block"></i>
                     <h5 class="fw-bold text-dark">Belum Ada Data Siswa</h5>
                     <p class="text-muted mb-4">Anda belum mendaftarkan anak satupun untuk tahun ajaran ini.</p>
-                    <a href="{{ route('parent.register.student') }}" class="btn btn-mis-navy rounded-pill px-4 py-2">
+                    <a href="{{ url('parent/register-student') }}" class="btn btn-mis-navy rounded-pill px-4 py-2">
                         <i class="bi bi-plus-circle me-2"></i>Mulai Pendaftaran
                     </a>
                 </div>

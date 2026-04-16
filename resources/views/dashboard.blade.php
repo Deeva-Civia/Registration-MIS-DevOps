@@ -37,7 +37,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-mis-navy border-bottom border-secondary">
         <div class="container-fluid px-4 py-1">
-            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-shield-check text-warning me-2"></i>MIS Portal</a>
+            <a class="navbar-brand fw-bold" href="{{ url('admin/dashboard') }}"><i class="bi bi-shield-check text-warning me-2"></i>MIS Portal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
