@@ -76,7 +76,7 @@
 
     <section class="hero-section">
         <div class="container text-center col-lg-8">
-            <h1 class="display-4 fw-bold mb-4">Masa Depan Cerah Dimulai dari Sini</h1>
+            <h1 class="display-4 fw-bold mb-4">Testing CI/CD DevOps</h1>
             <p class="lead mb-5">Portal Pendaftaran Manado Independent School. <br> Bergabunglah dengan komunitas pendidikan bertaraf internasional terbaik di Sulawesi Utara.</p>
             
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
